@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Login Page{% endblock %}
+{% block content %}
+    <h2>Login</h2>
+    <form action="#" method="post">
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+        </div>
+        <button type="submit" value="Login" class="btn btn-primary">Login</button>
+    </form>
+{% endblock %}

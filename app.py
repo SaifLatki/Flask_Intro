@@ -20,7 +20,7 @@ def home():
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
-        session.permanent = True
+        session.permanent = True 
         user = request.form["username"]
         session["username"] = user
         return redirect(url_for("user", usr=user))
